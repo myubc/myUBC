@@ -1,16 +1,14 @@
-### Hi there 👋
+# myUBC
+Official repo for discussions, requests and technical supports.
 
-<!--
-**myubc/myUBC** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Latest release
 
-Here are some ideas to get you started:
+release notes can be found under [discussion tab](https://github.com/myubc/myUBC/discussions/categories/announcements)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Feature request and bug report
+
+please open [an issue](https://github.com/myubc/myUBC/issues/new/choose) following predefined templates
+
+### Download
+
+myUBC is currently available exclusively on the [App Store](https://apps.apple.com/ca/app/myubc-made-for-ubc-students/id1498544052)
