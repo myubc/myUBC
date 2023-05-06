@@ -19,7 +19,7 @@ release notes can be found under [discussion tab](https://github.com/myubc/myUBC
 
 # Feature request and bug report
 
-<img width="86" alt="image" src="https://user-images.githubusercontent.com/131136576/236601498-7d7cf616-380d-4abe-a64a-12411a48647b.png">
+<img width="86" alt="image" src="https://user-images.githubusercontent.com/131136576/236601643-b9c1f5a5-ee4d-453d-90e7-89d69cfb3a1d.png">
 
 
 please open [an issue](https://github.com/myubc/myUBC/issues/new/choose) following predefined templates
