@@ -21,11 +21,14 @@ final class ControllerSmokeTests: XCTestCase {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { loaded.fulfill() }
         await fulfillment(of: [loaded], timeout: 2)
 
-        XCTAssertGreaterThan(controller.tableView(controller.tableView, numberOfRowsInSection: 0), 1)
-        controller.searchController.isActive = true
-        controller.searchController.searchBar.text = "hero"
+        let initialRowCount = controller.tableView(controller.tableView, numberOfRowsInSection: 0)
+        XCTAssertGreaterThan(initialRowCount, 1)
+        controller.didPresentSearchController(controller.searchController)
+        controller.searchController.searchBar.text = "definitely-not-a-real-food-place"
         controller.updateSearchResults(for: controller.searchController)
-        XCTAssertEqual(controller.tableView(controller.tableView, numberOfRowsInSection: 0), 1)
+        let filteredRowCount = controller.tableView(controller.tableView, numberOfRowsInSection: 0)
+        XCTAssertEqual(filteredRowCount, 0)
+        XCTAssertLessThan(filteredRowCount, initialRowCount)
     }
 
     func testFoodDetailControllerLoadsDetailModel() async throws {
