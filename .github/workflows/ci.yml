@@ -103,11 +103,18 @@ jobs:
       - name: Prepare artifacts directory
         run: mkdir -p artifacts
 
-      - name: Run unit and integration tests
+      - name: Verify app builds
         run: |
-          xcodebuild test \
+          xcodebuild build-for-testing \
             -project Sources/myUBC.xcodeproj \
             -scheme myUBC \
+            -destination '${{ steps.simulator.outputs.destination }}' \
+            -derivedDataPath "$DERIVED_DATA" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run unit and integration tests
+        run: |
+          xcodebuild test-without-building \
             -destination '${{ steps.simulator.outputs.destination }}' \
             -derivedDataPath "$DERIVED_DATA" \
             -resultBundlePath "$UNIT_RESULT_BUNDLE" \
@@ -116,9 +123,7 @@ jobs:
 
       - name: Run UI tests
         run: |
-          xcodebuild test \
-            -project Sources/myUBC.xcodeproj \
-            -scheme myUBC \
+          xcodebuild test-without-building \
             -destination '${{ steps.simulator.outputs.destination }}' \
             -derivedDataPath "$DERIVED_DATA" \
             -resultBundlePath "$UI_RESULT_BUNDLE" \
