@@ -47,5 +47,5 @@ please open [an issue](https://github.com/myubc/myUBC/issues/new/choose) followi
 # Download
 
 <img width="466" alt="image" src="https://user-images.githubusercontent.com/131136576/236600983-ae7f9cda-9dc5-4183-bd62-a3f9894d5f67.png">
-
+test
 myUBC is currently available exclusively on the [App Store](https://apps.apple.com/ca/app/myubc-made-for-ubc-students/id1498544052)
