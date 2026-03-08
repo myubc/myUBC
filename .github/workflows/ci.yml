@@ -115,6 +115,8 @@ jobs:
       - name: Run unit and integration tests
         run: |
           xcodebuild test-without-building \
+            -project Sources/myUBC.xcodeproj \
+            -scheme myUBC \
             -destination '${{ steps.simulator.outputs.destination }}' \
             -derivedDataPath "$DERIVED_DATA" \
             -resultBundlePath "$UNIT_RESULT_BUNDLE" \
@@ -124,6 +126,8 @@ jobs:
       - name: Run UI tests
         run: |
           xcodebuild test-without-building \
+            -project Sources/myUBC.xcodeproj \
+            -scheme myUBC \
             -destination '${{ steps.simulator.outputs.destination }}' \
             -derivedDataPath "$DERIVED_DATA" \
             -resultBundlePath "$UI_RESULT_BUNDLE" \
