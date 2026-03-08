@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and support
+    url: https://github.com/myubc/myUBC/discussions
+    about: Use discussions for usage questions, troubleshooting, and general support.
+  - name: Security vulnerability
+    url: https://github.com/myubc/myUBC/security
+    about: Please report vulnerabilities privately. Do not open public issues for security reports.

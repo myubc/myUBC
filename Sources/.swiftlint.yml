@@ -1,0 +1,61 @@
+disabled_rules:
+  - identifier_name
+  - opening_brace
+  - for_where
+  - multiline_arguments
+  - computed_accessors_order
+  - empty_string
+  - first_where
+  - sorted_first_last
+  - closure_parameter_position
+  - compiler_protocol_init
+  - multiple_closures_with_trailing_closure
+  - large_tuple
+  - unused_enumerated
+  - file_length
+
+opt_in_rules:
+  - accessibility_label_for_image
+  - array_init
+  - closure_spacing
+  - empty_count
+  - empty_string
+  - explicit_init
+  - first_where
+  - last_where
+  - multiline_arguments
+  - multiline_parameters
+  - sorted_first_last
+  - vertical_parameter_alignment_on_call
+
+line_length:
+  warning: 160
+  error: 10000
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+  ignores_interpolated_strings: true
+
+cyclomatic_complexity:
+  warning: 18
+  error: 40
+
+function_body_length:
+  warning: 80
+  error: 140
+
+type_body_length:
+  warning: 300
+  error: 900
+
+force_cast:
+  severity: warning
+
+shorthand_operator:
+  severity: warning
+
+excluded:
+  - Pods
+  - myUBC.xcodeproj
+  - myUBC.xcworkspace
+  - myUBC/Vendor
