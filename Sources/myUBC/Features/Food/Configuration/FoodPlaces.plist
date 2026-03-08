@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>bento-sushi</string>
+		<key>displayName</key>
+		<string>Bento Sushi</string>
+		<key>spaceTitle</key>
+		<string>Bento Sushi</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/bento-sushi/</string>
+		<key>tvalue</key>
+		<string>1589172167491</string>
+		<key>address</key>
+		<string>David Lam Research Centre\n2015 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>0</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>booster-juice-life</string>
+		<key>displayName</key>
+		<string>Booster Juice Life</string>
+		<key>spaceTitle</key>
+		<string>Booster Juice Life</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/booster-juice-life/</string>
+		<key>tvalue</key>
+		<string>1589172167491</string>
+		<key>address</key>
+		<string>UBC Life Building\n6138 Student Union Blvd</string>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>1</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>feast</string>
+		<key>displayName</key>
+		<string>Feast</string>
+		<key>spaceTitle</key>
+		<string>Feast</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/feast/</string>
+		<key>tvalue</key>
+		<string>1589172167492</string>
+		<key>address</key>
+		<string>Feast, Totem Park Residence\n2525 West Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>2</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>fooood</string>
+		<key>displayName</key>
+		<string>Fooood</string>
+		<key>spaceTitle</key>
+		<string>Fooood</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/fooood/</string>
+		<key>tvalue</key>
+		<string>1589172167492</string>
+		<key>address</key>
+		<string>Earth Sciences Building\n2207 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>3</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>fooood-2-0</string>
+		<key>displayName</key>
+		<string>Fooood 2.0</string>
+		<key>spaceTitle</key>
+		<string>Fooood 2.0</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/fooood-2-0/</string>
+		<key>tvalue</key>
+		<string>1589172167492</string>
+		<key>address</key>
+		<string>Instructional Resource Centre\n2194 Health Sciences Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>4</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>avenue-c-store</string>
+		<key>displayName</key>
+		<string>Avenue C Store</string>
+		<key>spaceTitle</key>
+		<string>Avenue C Store</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/avenue-c-store-neville-scarfe-building/</string>
+		<key>tvalue</key>
+		<string></string>
+		<key>address</key>
+		<string>Walter Gage Residence\n5959 Student Union Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>5</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>gage-market</string>
+		<key>displayName</key>
+		<string>Gage Market</string>
+		<key>spaceTitle</key>
+		<string>Gage Market</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/gage-market/</string>
+		<key>tvalue</key>
+		<string></string>
+		<key>address</key>
+		<string>Walter Gage Residence\n5959 Student Union Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>5</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>gather</string>
+		<key>displayName</key>
+		<string>Gather</string>
+		<key>spaceTitle</key>
+		<string>Gather</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/gather/</string>
+		<key>tvalue</key>
+		<string>1589172167493</string>
+		<key>address</key>
+		<string>Gather, Place Vanier Residence\n1935 Lower Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>6</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>harvest</string>
+		<key>displayName</key>
+		<string>Harvest</string>
+		<key>spaceTitle</key>
+		<string>Harvest</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/harvest-market/</string>
+		<key>tvalue</key>
+		<string>1589172167493</string>
+		<key>address</key>
+		<string>Ponderosa Commons\n2029 West Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>7</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>hero</string>
+		<key>displayName</key>
+		<string>Hero</string>
+		<key>spaceTitle</key>
+		<string>Hero</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/hero-coffee-market/</string>
+		<key>tvalue</key>
+		<string>1589172167493</string>
+		<key>address</key>
+		<string>Orchard Commons\n6363 Agronomy Road, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>8</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>hubbards</string>
+		<key>displayName</key>
+		<string>Hubbards</string>
+		<key>spaceTitle</key>
+		<string>Hubbards</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/hubbards-global-market/</string>
+		<key>tvalue</key>
+		<string>1589172167493</string>
+		<key>address</key>
+		<string>Place Vanier Residence\n1935 Lower Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>9</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>ideas-lunch-wine-bar</string>
+		<key>displayName</key>
+		<string>Ideas Lunch &amp; Wine Bar</string>
+		<key>spaceTitle</key>
+		<string>Ideas Lunch &amp; Wine Bar</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/ideas-lunch-wine-bar/</string>
+		<key>tvalue</key>
+		<string>1589172167494</string>
+		<key>address</key>
+		<string>University Centre\n6331 Crescent Road, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>10</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>ike-s</string>
+		<key>displayName</key>
+		<string>Ike&apos;s</string>
+		<key>spaceTitle</key>
+		<string>Ike&apos;s</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/ikes-cafe/</string>
+		<key>tvalue</key>
+		<string>1589172167494</string>
+		<key>address</key>
+		<string>Irving K. Barber Learning Centre\n1961 East Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>11</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>law-cafe</string>
+		<key>displayName</key>
+		<string>Law Cafe</string>
+		<key>spaceTitle</key>
+		<string>Law Cafe</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/law-cafe/</string>
+		<key>tvalue</key>
+		<string>1589172167494</string>
+		<key>address</key>
+		<string>Allard Hall\n1822 East Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>12</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>magda-s</string>
+		<key>displayName</key>
+		<string>Magda&apos;s</string>
+		<key>spaceTitle</key>
+		<string>Magda&apos;s</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/magdas-late-nite-market/</string>
+		<key>tvalue</key>
+		<string>1589172167495</string>
+		<key>address</key>
+		<string>Totem Park Residence\n2525 West Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>13</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>mercante</string>
+		<key>displayName</key>
+		<string>Mercante</string>
+		<key>spaceTitle</key>
+		<string>Mercante</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/mercante/</string>
+		<key>tvalue</key>
+		<string>1589172167495</string>
+		<key>address</key>
+		<string>Ponderosa Commons\n6488 University Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>14</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>open-kitchen</string>
+		<key>displayName</key>
+		<string>Open Kitchen</string>
+		<key>spaceTitle</key>
+		<string>Open Kitchen</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/open-kitchen/</string>
+		<key>tvalue</key>
+		<string>1589172167495</string>
+		<key>address</key>
+		<string>Orchard Commons Residence\n6363 Agronomy Road, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>15</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>pacific-poke-life</string>
+		<key>displayName</key>
+		<string>Pacific Poke Life</string>
+		<key>spaceTitle</key>
+		<string>Pacific Poke Life</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/pacific-poke-life/</string>
+		<key>tvalue</key>
+		<string>1589172167496</string>
+		<key>address</key>
+		<string>Life Building\n6138 Student Union Boulevard, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>16</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>pacific-poke</string>
+		<key>displayName</key>
+		<string>Pacific Poke</string>
+		<key>spaceTitle</key>
+		<string>Pacific Poke</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/pacific-poke/</string>
+		<key>tvalue</key>
+		<string>1589172167496</string>
+		<key>address</key>
+		<string>Computer Science Building\n2366 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>17</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>perugia</string>
+		<key>displayName</key>
+		<string>Perugia</string>
+		<key>spaceTitle</key>
+		<string>Perugia</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/perugia-italian-caffe/</string>
+		<key>tvalue</key>
+		<string>1589172167496</string>
+		<key>address</key>
+		<string>Life Sciences Centre\n2350 Health Sciences Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>18</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>sage</string>
+		<key>displayName</key>
+		<string>Sage</string>
+		<key>spaceTitle</key>
+		<string>Sage</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/sage-restaurant-catering/</string>
+		<key>tvalue</key>
+		<string>1589172167496</string>
+		<key>address</key>
+		<string>University Centre\n6331 Crescent Road, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>19</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>starbucks-bookstore</string>
+		<key>displayName</key>
+		<string>Starbucks Bookstore</string>
+		<key>spaceTitle</key>
+		<string>Starbucks Bookstore</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/starbucks-bookstore/</string>
+		<key>tvalue</key>
+		<string>1589172167497</string>
+		<key>address</key>
+		<string>UBC Bookstore\n6200 University Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>20</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>starbucks-fred-kaiser</string>
+		<key>displayName</key>
+		<string>Starbucks Fred Kaiser</string>
+		<key>spaceTitle</key>
+		<string>Starbucks Fred Kaiser</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/starbucks-kaiser/</string>
+		<key>tvalue</key>
+		<string>1589172167497</string>
+		<key>address</key>
+		<string>Fred Kaiser Lobby\n2332 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>21</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>starbucks-life</string>
+		<key>displayName</key>
+		<string>Starbucks Life</string>
+		<key>spaceTitle</key>
+		<string>Starbucks Life</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/starbucks/</string>
+		<key>tvalue</key>
+		<string>1589172167498</string>
+		<key>address</key>
+		<string>UBC Life Building\n6138 Student Union Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>22</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>stir-it-up</string>
+		<key>displayName</key>
+		<string>Stir it Up</string>
+		<key>spaceTitle</key>
+		<string>Stir it Up</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/stir-it-up-cafe/</string>
+		<key>tvalue</key>
+		<string>1589172167498</string>
+		<key>address</key>
+		<string>Buchanan Block A\n1866 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>23</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>subway-life</string>
+		<key>displayName</key>
+		<string>Subway Life</string>
+		<key>spaceTitle</key>
+		<string>Subway Life</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/subway/</string>
+		<key>tvalue</key>
+		<string>1589172167498</string>
+		<key>address</key>
+		<string>UBC Life Building\n6138 Student Union Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>24</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>the-loop</string>
+		<key>displayName</key>
+		<string>The Loop</string>
+		<key>spaceTitle</key>
+		<string>The Loop</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/the-loop-cafe/</string>
+		<key>tvalue</key>
+		<string>1589172167499</string>
+		<key>address</key>
+		<string>Centre for Research on Sustainability\n2260 West Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>25</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>the-point</string>
+		<key>displayName</key>
+		<string>The Point</string>
+		<key>spaceTitle</key>
+		<string>The Point</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/the-point/</string>
+		<key>tvalue</key>
+		<string>1589172167499</string>
+		<key>address</key>
+		<string>Marine Drive Residence\n2205 Lower Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>26</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>tim-hortons-david-lam</string>
+		<key>displayName</key>
+		<string>Tim Hortons David Lam</string>
+		<key>spaceTitle</key>
+		<string>Tim Hortons David Lam</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/tim-hortons-david-lam/</string>
+		<key>tvalue</key>
+		<string>1589172167499</string>
+		<key>address</key>
+		<string>David Lam Research Centre\n2015 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>27</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>tim-hortons-forestry</string>
+		<key>displayName</key>
+		<string>Tim Hortons Forestry</string>
+		<key>spaceTitle</key>
+		<string>Tim Hortons Forestry</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/tim-hortons-forestry/</string>
+		<key>tvalue</key>
+		<string>1589172167500</string>
+		<key>address</key>
+		<string>Forest Sciences Centre\n2424 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>28</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>tim-hortons-orca-house</string>
+		<key>displayName</key>
+		<string>Tim Hortons Orca House</string>
+		<key>spaceTitle</key>
+		<string>Tim Hortons Orca House</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/tim-hortons-orca-house/</string>
+		<key>tvalue</key>
+		<string></string>
+		<key>address</key>
+		<string>Orca House Residence\n5955 Student Union Blvd, Vancouver</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>29</integer>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>triple-os</string>
+		<key>displayName</key>
+		<string>Triple Os</string>
+		<key>spaceTitle</key>
+		<string>Triple Os</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/triple-os/</string>
+		<key>tvalue</key>
+		<string>1589172167500</string>
+		<key>address</key>
+		<string>David Lam Research Centre\n2015 Main Mall, Vancouver</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>30</integer>
+		<key>widgetDefault</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>dabao</string>
+		<key>displayName</key>
+		<string>DaBao</string>
+		<key>spaceTitle</key>
+		<string>DaBao</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/dabao/</string>
+		<key>address</key>
+		<string>Irving K. Barber Learning Centre
+1961 East Mall
+Vancouver, BC</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>tvalue</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>31</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>pho-real</string>
+		<key>displayName</key>
+		<string>Pho Real</string>
+		<key>spaceTitle</key>
+		<string>Pho Real</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/pho-real/</string>
+		<key>address</key>
+		<string>2366 Main Mall
+Vancouver, BC</string>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>tvalue</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>32</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>presto</string>
+		<key>displayName</key>
+		<string>Presto</string>
+		<key>spaceTitle</key>
+		<string>Presto</string>
+		<key>url</key>
+		<string>https://food.ubc.ca/places/presto/</string>
+		<key>address</key>
+		<string>David Lam Research Centre
+2015 Main Mall
+Vancouver, BC</string>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>tvalue</key>
+		<string></string>
+		<key>sortOrder</key>
+		<integer>33</integer>
+		<key>category</key>
+		<string></string>
+		<key>iconName</key>
+		<string></string>
+		<key>widgetDefault</key>
+		<false/>
+	</dict>
+</array>
+</plist>

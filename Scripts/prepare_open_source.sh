@@ -93,7 +93,7 @@ logger_text = re.sub(
 logger.write_text(logger_text)
 
 header_extensions = {".swift", ".h", ".m", ".mm", ".xib", ".storyboard"}
-excluded_parts = {".git", "Vendor", ".open-source-export", "SourcePackages"}
+excluded_parts = {".git", "Vendor", "SourcePackages"}
 for path in root.rglob("*"):
     if (
         path.is_file()
@@ -102,8 +102,8 @@ for path in root.rglob("*"):
     ):
         text = path.read_text(errors="ignore")
         updated = re.sub(
-            r"Created by\s+(.+?)\s+on",
-            "Created by myUBC on",
+            r"(?m)^(\s*(?://|/\*+|<!--)\s*Created by\s+)(.+?)(\s+on\s+\d{4}-\d{2}-\d{2}\.?(?:\s*\*/|-->)?)$",
+            r"\1myUBC\3",
             text,
         )
         if updated != text:

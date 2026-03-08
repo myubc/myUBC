@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="myUBC" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="jOx-3C-rpm" id="RH6-bZ-XpD"/>
+                <outlet property="navigationBar" destination="1Z0-OU-II4" id="FbK-GJ-yPn"/>
+                <outlet property="progressView" destination="a76-eq-LEn" id="gKV-4O-T2O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webContentView" destination="VqH-eI-Bnc" id="2p0-v5-TDy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z0-OU-II4">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="barTintColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem id="CyJ-95-y8D">
+                            <nil key="title"/>
+                            <barButtonItem key="leftBarButtonItem" style="done" systemItem="refresh" id="3TI-IS-Pyl">
+                                <connections>
+                                    <action selector="didRefresh:" destination="-1" id="lkR-Xz-Wip"/>
+                                </connections>
+                            </barButtonItem>
+                            <view key="titleView" contentMode="scaleToFill" id="ZOJ-Wc-PRn">
+                                <rect key="frame" x="124.5" y="5.5" width="165" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ubc.ca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOx-3C-rpm">
+                                        <rect key="frame" x="56.5" y="6" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yq-mg-p98">
+                                        <rect key="frame" x="33" y="5.5" width="18.5" height="22"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="lock.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5yq-mg-p98" firstAttribute="centerY" secondItem="ZOJ-Wc-PRn" secondAttribute="centerY" id="5oz-lL-Mz0"/>
+                                    <constraint firstItem="jOx-3C-rpm" firstAttribute="leading" secondItem="5yq-mg-p98" secondAttribute="trailing" constant="5" id="9px-sZ-zjw"/>
+                                    <constraint firstItem="jOx-3C-rpm" firstAttribute="centerY" secondItem="ZOJ-Wc-PRn" secondAttribute="centerY" id="VUG-1P-mHO"/>
+                                    <constraint firstItem="jOx-3C-rpm" firstAttribute="centerX" secondItem="ZOJ-Wc-PRn" secondAttribute="centerX" id="nLQ-TN-PQg"/>
+                                </constraints>
+                            </view>
+                            <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="oT1-fb-T52">
+                                <connections>
+                                    <action selector="didDismiss:" destination="-1" id="tLC-7M-CV9"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-eI-Bnc">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a76-eq-LEn">
+                    <rect key="frame" x="0.0" y="86" width="414" height="2.5"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="a76-eq-LEn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9ph-CA-eW9"/>
+                <constraint firstAttribute="trailing" secondItem="a76-eq-LEn" secondAttribute="trailing" id="GiI-WJ-wLd"/>
+                <constraint firstItem="VqH-eI-Bnc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ksi-TN-UIL"/>
+                <constraint firstItem="1Z0-OU-II4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ldq-C5-QVP"/>
+                <constraint firstItem="a76-eq-LEn" firstAttribute="top" secondItem="1Z0-OU-II4" secondAttribute="bottom" constant="-2" id="PiP-ze-dGK"/>
+                <constraint firstItem="1Z0-OU-II4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Pzp-7W-THs"/>
+                <constraint firstItem="VqH-eI-Bnc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="S4N-r3-8eM"/>
+                <constraint firstItem="1Z0-OU-II4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WZV-kh-TiI"/>
+                <constraint firstAttribute="bottom" secondItem="VqH-eI-Bnc" secondAttribute="bottom" id="WvL-gG-elH"/>
+                <constraint firstItem="1Z0-OU-II4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k7R-RM-FRm"/>
+                <constraint firstItem="VqH-eI-Bnc" firstAttribute="top" secondItem="1Z0-OU-II4" secondAttribute="bottom" id="wbM-Eb-OuY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-375.36231884057975" y="45.535714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
+    </resources>
+</document>

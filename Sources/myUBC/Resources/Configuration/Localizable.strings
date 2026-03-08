@@ -1,0 +1,38 @@
+"error.network" = "Sorry, something went wrong while attempting to reach UBC web services. Please try again later.";
+"error.offline" = "You are offline. Displaying the most recently saved data.";
+"error.parse" = "We could not read the latest data. Please try again later.";
+"error.cache" = "Cached data is unavailable. Please try again later.";
+"error.unknown" = "An unexpected error occurred. Please try again later.";
+
+"alert.network.title" = "Network Error";
+"alert.offline.title" = "Offline";
+"alert.error.title" = "Error";
+"alert.details.title" = "Details";
+"alert.ok" = "OK";
+
+"food.title" = "Food Services";
+"calendar.title" = "Calendar";
+"parking.details" = "Parking availability is shown as Good, Limited, or Full.\n\n\"Parking\" refers to regular parking stalls, and \"EV\" refers to EV charging stalls.\n\nThis information is provided by UBC Parking and may be delayed by up to 30 minutes.";
+"calendar.details" = "UBC typically updates the Academic Calendar for new academic terms in July or August.\n\nThe upcoming Winter Session calendar may not appear until September 1.";
+
+"loading.wait" = "Please wait...";
+
+"food.status.open" = "Open";
+"food.status.closed" = "Closed";
+"food.status.closed.ufn" = "Closed Until Further Notice";
+
+"info.none" = "No Campus Notifications";
+"info.active" = "Campus Notification in Effect";
+"info.lastUpdate" = "Last Updated: %@";
+"info.lastUpdate.justNow" = "Last Updated: Just now";
+"banner.lastUpdated" = "Last updated %@.";
+
+"landing.food.title" = "Food";
+"landing.charger.title" = "Charger";
+"landing.calendar.title" = "Academic Calendar";
+"landing.parking.title" = "Parking";
+"landing.upass.title" = "UPass Renewal";
+"landing.info.title" = "Campus Notification";
+"landing.showAll" = "Show All";
+"landing.learnMore" = "Learn More";
+"landing.details" = "Details";
