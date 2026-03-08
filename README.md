@@ -1,5 +1,10 @@
 # myUBC
 
+[![CI](https://github.com/myubc/myUBC/actions/workflows/ci.yml/badge.svg)](https://github.com/myubc/myUBC/actions/workflows/ci.yml)
+[![License: GPL v3 or later](https://img.shields.io/badge/License-GPLv3%2B-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![App Store](https://img.shields.io/badge/App%20Store-myUBC-0D96F6?logo=app-store&logoColor=white)](https://apps.apple.com/ca/app/myubc-made-for-ubc-students/id1498544052)
+[![Discussions](https://img.shields.io/badge/GitHub-Discussions-1f6feb?logo=github)](https://github.com/myubc/myUBC/discussions)
+
 ### Official repo for discussions, requests and technical supports.
 
 <img width="366" alt="image" src="https://user-images.githubusercontent.com/131136576/236601118-89005270-9801-46ed-a0fd-6edba02406d3.png">
@@ -44,4 +49,3 @@ please open [an issue](https://github.com/myubc/myUBC/issues/new/choose) followi
 <img width="466" alt="image" src="https://user-images.githubusercontent.com/131136576/236600983-ae7f9cda-9dc5-4183-bd62-a3f9894d5f67.png">
 
 myUBC is currently available exclusively on the [App Store](https://apps.apple.com/ca/app/myubc-made-for-ubc-students/id1498544052)
-
