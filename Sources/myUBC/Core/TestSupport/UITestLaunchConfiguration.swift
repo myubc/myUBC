@@ -2,7 +2,7 @@
 //  UITestLaunchConfiguration.swift
 //  myUBC
 //
-//  Created by OpenAI myUBC on 2026-03-07.
+//  Created by myUBC on 2026-03-07.
 //
 
 import Foundation

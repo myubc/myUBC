@@ -9,6 +9,10 @@ on:
 jobs:
   test:
     runs-on: macos-15
+    env:
+      DERIVED_DATA: ${{ github.workspace }}/DerivedData
+      UNIT_RESULT_BUNDLE: ${{ github.workspace }}/artifacts/unit-tests.xcresult
+      UI_RESULT_BUNDLE: ${{ github.workspace }}/artifacts/ui-tests.xcresult
 
     steps:
       - name: Checkout repository
@@ -40,6 +44,16 @@ jobs:
           )
           payload = json.loads(raw)
           candidates = []
+          preferred_major = 18
+          preferred_names = [
+              "iPhone 16 Pro",
+              "iPhone 16 Plus",
+              "iPhone 16e",
+              "iPhone 17",
+              "iPhone 17 Pro",
+              "iPhone 17 Pro Max",
+              "iPhone Air",
+          ]
           for runtime, devices in payload.get("devices", {}).items():
               if "iOS" not in runtime:
                   continue
@@ -52,17 +66,71 @@ jobs:
                   name = device.get("name", "")
                   if "iPhone" not in name:
                       continue
-                  candidates.append(((major, minor), name, device["udid"]))
+                  preferred_runtime = 1 if major == preferred_major else 0
+                  preferred_name = 1 if name in preferred_names else 0
+                  name_rank = preferred_names.index(name) if name in preferred_names else len(preferred_names)
+                  candidates.append((
+                      preferred_runtime,
+                      preferred_name,
+                      -name_rank,
+                      major,
+                      minor,
+                      name,
+                      device["udid"],
+                  ))
 
           if not candidates:
               raise SystemExit("No available iOS Simulator iPhone destinations found.")
 
           candidates.sort(reverse=True)
-          _, name, udid = candidates[0]
+          _, _, _, major, minor, name, udid = candidates[0]
+          runtime = f"iOS {major}.{minor}"
           print(f"Using simulator: {name} ({udid})")
+          print(f"Preferred runtime selected: {runtime}")
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"udid={udid}\n")
               output.write(f"destination=platform=iOS Simulator,id={udid}\n")
           PY
 
-      - name: Run tests
-        run: xcodebuild test -project Sources/myUBC.xcodeproj -scheme myUBC -destination '${{ steps.simulator.outputs.destination }}' CODE_SIGNING_ALLOWED=NO
+      - name: Boot simulator
+        run: |
+          xcrun simctl shutdown '${{ steps.simulator.outputs.udid }}' || true
+          xcrun simctl erase '${{ steps.simulator.outputs.udid }}' || true
+          xcrun simctl boot '${{ steps.simulator.outputs.udid }}' || true
+          xcrun simctl bootstatus '${{ steps.simulator.outputs.udid }}' -b
+          sleep 15
+
+      - name: Prepare artifacts directory
+        run: mkdir -p artifacts
+
+      - name: Run unit and integration tests
+        run: |
+          xcodebuild test \
+            -project Sources/myUBC.xcodeproj \
+            -scheme myUBC \
+            -destination '${{ steps.simulator.outputs.destination }}' \
+            -derivedDataPath "$DERIVED_DATA" \
+            -resultBundlePath "$UNIT_RESULT_BUNDLE" \
+            -skip-testing:myUBCUITests \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run UI tests
+        run: |
+          xcodebuild test \
+            -project Sources/myUBC.xcodeproj \
+            -scheme myUBC \
+            -destination '${{ steps.simulator.outputs.destination }}' \
+            -derivedDataPath "$DERIVED_DATA" \
+            -resultBundlePath "$UI_RESULT_BUNDLE" \
+            -only-testing:myUBCUITests/LandingScreenUITests \
+            -parallel-testing-enabled NO \
+            -retry-tests-on-failure \
+            -test-iterations 2 \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Upload test results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcode-test-results
+          path: artifacts/*.xcresult
