@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>statusContainerSelectors</key>
+    <array>
+        <string>.mb-bhi-display</string>
+        <string>.mb-bhi-open</string>
+        <string>.mb-bhi-closed</string>
+        <string>.mb-bhi-close</string>
+        <string>span[class*="mb-bhi"]</string>
+    </array>
+    <key>statusTextSelectors</key>
+    <array>
+        <string>.mb-bhi-oc-text</string>
+        <string>[class*="mb-bhi"] .mb-bhi-oc-text</string>
+    </array>
+    <key>openClassTokens</key>
+    <array>
+        <string>mb-bhi-open</string>
+        <string>open</string>
+    </array>
+    <key>closedClassTokens</key>
+    <array>
+        <string>mb-bhi-closed</string>
+        <string>mb-bhi-close</string>
+        <string>closed</string>
+    </array>
+    <key>openTextPatterns</key>
+    <array>
+        <string>open till</string>
+        <string>open until</string>
+        <string>open</string>
+    </array>
+    <key>closedTextPatterns</key>
+    <array>
+        <string>closed</string>
+        <string>opens</string>
+        <string>opening</string>
+    </array>
+</dict>
+</plist>

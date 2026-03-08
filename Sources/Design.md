@@ -383,8 +383,6 @@ The current repository layout reflects the intended ownership boundaries more cl
 - `Resources/Persistence`
   - Core Data model and other persistence resources
 
-This structure is meant to answer a simple question: “is this file app shell, shared support, or feature code?” If the answer is unclear, the structure is still too broad.
-
 ## Testing Approach
 
 The current test strategy is deliberately split by purpose:

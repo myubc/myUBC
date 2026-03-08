@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="errorcell" rowHeight="429" id="KGk-i7-Jjw" customClass="ErrorTableViewCell" customModule="myUBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="429"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="429"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAA-nN-c2R">
+                        <rect key="frame" x="15" y="15" width="483" height="399"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-WE-D6L">
+                                <rect key="frame" x="193" y="46.5" width="97" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0V1-WE-D6L" secondAttribute="height" multiplier="1:1" id="oZj-lh-YAX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Chargers Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zbi-bs-z3q">
+                                <rect key="frame" x="15" y="153.5" width="453" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBC may no longer offer chargers at this location. Please check again later or visit the library website for the latest information." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YxT-CQ-XlO">
+                                <rect key="frame" x="25" y="183" width="433" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h5-4y-nQo">
+                                <rect key="frame" x="153" y="284.5" width="177" height="30"/>
+                                <state key="normal" title="Open UBC Website"/>
+                                <connections>
+                                    <action selector="didFallBack:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7X3-Rt-Kkh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zbi-bs-z3q" firstAttribute="top" secondItem="0V1-WE-D6L" secondAttribute="bottom" constant="10" id="2ZW-M7-vV1"/>
+                            <constraint firstItem="YxT-CQ-XlO" firstAttribute="centerX" secondItem="DAA-nN-c2R" secondAttribute="centerX" id="40u-5I-BbJ"/>
+                            <constraint firstItem="3h5-4y-nQo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YxT-CQ-XlO" secondAttribute="bottom" constant="15" id="ATN-vO-4b3"/>
+                            <constraint firstItem="YxT-CQ-XlO" firstAttribute="top" secondItem="Zbi-bs-z3q" secondAttribute="bottom" constant="10" id="CgU-4G-8XG"/>
+                            <constraint firstItem="YxT-CQ-XlO" firstAttribute="centerY" secondItem="DAA-nN-c2R" secondAttribute="centerY" id="EV6-Kn-wN1"/>
+                            <constraint firstItem="Zbi-bs-z3q" firstAttribute="leading" secondItem="DAA-nN-c2R" secondAttribute="leading" constant="15" id="M8O-XV-1OW"/>
+                            <constraint firstItem="3h5-4y-nQo" firstAttribute="centerY" secondItem="DAA-nN-c2R" secondAttribute="centerY" multiplier="1.5" id="P2P-rP-gIo"/>
+                            <constraint firstItem="0V1-WE-D6L" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DAA-nN-c2R" secondAttribute="top" constant="10" id="QnB-9z-ys3"/>
+                            <constraint firstItem="YxT-CQ-XlO" firstAttribute="leading" secondItem="DAA-nN-c2R" secondAttribute="leading" constant="25" id="U9U-3Z-Stb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3h5-4y-nQo" secondAttribute="trailing" constant="15" id="Unb-dR-Cr1"/>
+                            <constraint firstItem="0V1-WE-D6L" firstAttribute="centerX" secondItem="DAA-nN-c2R" secondAttribute="centerX" id="cKP-4W-1FK"/>
+                            <constraint firstAttribute="trailing" secondItem="YxT-CQ-XlO" secondAttribute="trailing" constant="25" id="cW3-UE-lsA"/>
+                            <constraint firstItem="3h5-4y-nQo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DAA-nN-c2R" secondAttribute="leading" constant="15" id="coS-O0-Rv1"/>
+                            <constraint firstItem="3h5-4y-nQo" firstAttribute="centerX" secondItem="DAA-nN-c2R" secondAttribute="centerX" id="gXS-1v-7xb"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3h5-4y-nQo" secondAttribute="bottom" constant="15" id="iAN-27-K34"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbi-bs-z3q" secondAttribute="trailing" constant="15" id="q2f-rP-iPn"/>
+                            <constraint firstItem="Zbi-bs-z3q" firstAttribute="centerX" secondItem="DAA-nN-c2R" secondAttribute="centerX" id="raU-kX-XIA"/>
+                            <constraint firstItem="0V1-WE-D6L" firstAttribute="width" secondItem="DAA-nN-c2R" secondAttribute="width" multiplier="0.2" id="rmF-lx-zKS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DAA-nN-c2R" secondAttribute="trailing" constant="15" id="eTQ-yG-kkn"/>
+                    <constraint firstItem="DAA-nN-c2R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="f1x-Nz-6Q6"/>
+                    <constraint firstItem="DAA-nN-c2R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nBL-om-l8x"/>
+                    <constraint firstAttribute="baseline" secondItem="DAA-nN-c2R" secondAttribute="bottom" constant="15" id="taM-LU-P24"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="323.91304347826087" y="187.83482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="face" width="490" height="407"/>
+    </resources>
+</document>

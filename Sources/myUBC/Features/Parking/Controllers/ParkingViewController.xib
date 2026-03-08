@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParkingViewController" customModule="myUBC" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="vye-fx-Vww" id="VvU-fJ-Ypr"/>
+                <outlet property="navigateBtnConstraint" destination="9pE-vo-dQ6" id="UQX-UK-CIU"/>
+                <outlet property="navigationBtn" destination="uOE-19-trM" id="Q9E-Tf-gKA"/>
+                <outlet property="shadowView" destination="GBS-5h-B8U" id="b02-1L-WG4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vye-fx-Vww">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1X-2n-JHC">
+                    <rect key="frame" x="358.5" y="63" width="40.5" height="40.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="b1X-2n-JHC" secondAttribute="height" multiplier="1:1" id="y7g-bo-DTS"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                    <connections>
+                        <action selector="didTapClose:" destination="-1" eventType="touchUpInside" id="02E-MZ-Zwj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-dT-r31">
+                    <rect key="frame" x="15" y="66.5" width="50" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system"/>
+                    <connections>
+                        <action selector="showInfo:" destination="-1" eventType="touchUpInside" id="YeQ-Wf-Pg3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBS-5h-B8U">
+                    <rect key="frame" x="47.5" y="772" width="319" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOE-19-trM">
+                    <rect key="frame" x="30" y="772" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.35686274509803922" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sRI-CD-ljy"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Navigate to Here  " image="arrow.right.square.fill" catalog="system"/>
+                    <connections>
+                        <action selector="didNavigateBtn:" destination="-1" eventType="touchUpInside" id="86R-R8-UDD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-mj-93I">
+                    <rect key="frame" x="149" y="73" width="116.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uOE-19-trM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1k5-o9-BYl"/>
+                <constraint firstAttribute="bottom" secondItem="vye-fx-Vww" secondAttribute="bottom" id="4Ef-9o-PKw"/>
+                <constraint firstItem="vye-fx-Vww" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8xy-0W-vQn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uOE-19-trM" secondAttribute="bottom" constant="40" id="9pE-vo-dQ6"/>
+                <constraint firstItem="lbm-mj-93I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cq7-dT-r31" secondAttribute="trailing" constant="5" id="FRY-ud-xQW"/>
+                <constraint firstItem="b1X-2n-JHC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="MOZ-SS-XHq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uOE-19-trM" secondAttribute="trailing" constant="30" id="Pjc-UO-bYq"/>
+                <constraint firstItem="vye-fx-Vww" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Rwp-nu-3fn"/>
+                <constraint firstItem="uOE-19-trM" firstAttribute="centerX" secondItem="vye-fx-Vww" secondAttribute="centerX" id="SDn-qK-Fgb"/>
+                <constraint firstItem="vye-fx-Vww" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SxV-Z9-RJm"/>
+                <constraint firstItem="GBS-5h-B8U" firstAttribute="height" secondItem="uOE-19-trM" secondAttribute="height" id="XNI-O8-4g3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b1X-2n-JHC" secondAttribute="trailing" constant="15" id="Yz3-Gb-5Fw"/>
+                <constraint firstItem="lbm-mj-93I" firstAttribute="centerX" secondItem="vye-fx-Vww" secondAttribute="centerX" id="Z5v-dr-9K6"/>
+                <constraint firstItem="GBS-5h-B8U" firstAttribute="centerY" secondItem="uOE-19-trM" secondAttribute="centerY" id="ZED-Xk-VFc"/>
+                <constraint firstItem="lbm-mj-93I" firstAttribute="centerY" secondItem="b1X-2n-JHC" secondAttribute="centerY" id="c3c-8M-p9J"/>
+                <constraint firstItem="vye-fx-Vww" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fJL-YE-w3Q"/>
+                <constraint firstItem="GBS-5h-B8U" firstAttribute="width" secondItem="uOE-19-trM" secondAttribute="width" multiplier="0.9" id="gMG-al-KXT"/>
+                <constraint firstItem="b1X-2n-JHC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lbm-mj-93I" secondAttribute="trailing" constant="5" id="knX-Rh-NIg"/>
+                <constraint firstItem="cq7-dT-r31" firstAttribute="centerY" secondItem="b1X-2n-JHC" secondAttribute="centerY" id="lrb-L3-MaW"/>
+                <constraint firstItem="cq7-dT-r31" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="tKB-tm-Opb"/>
+                <constraint firstItem="GBS-5h-B8U" firstAttribute="centerX" secondItem="uOE-19-trM" secondAttribute="centerX" id="wiS-aE-9Mg"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.right.square.fill" catalog="system" width="128" height="114"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="xmark" catalog="system" width="128" height="107"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

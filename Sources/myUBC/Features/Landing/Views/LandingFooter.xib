@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LandingFooter" customModule="myUBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoying myUBC?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN3-UB-iHX">
+                    <rect key="frame" x="20" y="58" width="433" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="placeholderTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64n-xK-2GO">
+                    <rect key="frame" x="10" y="75" width="453" height="25"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Tap ">
+                                <attributes>
+                                    <color key="NSColor" systemColor="placeholderTextColor"/>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="here">
+                                <attributes>
+                                    <color key="NSColor" systemColor="placeholderTextColor"/>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" to rate us on App Store">
+                                <attributes>
+                                    <color key="NSColor" systemColor="placeholderTextColor"/>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="didTapReview:" destination="iN0-l3-epB" eventType="touchUpInside" id="XWQ-rj-D2W"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myUBC © All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJZ-KX-B1X">
+                    <rect key="frame" x="20" y="120" width="433" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" systemColor="placeholderTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="LandingBackground"/>
+            <constraints>
+                <constraint firstItem="KJZ-KX-B1X" firstAttribute="top" secondItem="64n-xK-2GO" secondAttribute="bottom" constant="20" id="0Fd-eM-7as"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="64n-xK-2GO" secondAttribute="trailing" constant="10" id="6oT-Er-8Q9"/>
+                <constraint firstItem="64n-xK-2GO" firstAttribute="top" secondItem="IN3-UB-iHX" secondAttribute="bottom" id="8P8-Mx-4fn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KJZ-KX-B1X" secondAttribute="trailing" constant="20" id="Cfr-hk-QW4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IN3-UB-iHX" secondAttribute="trailing" constant="20" id="IbI-Ip-AFh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KJZ-KX-B1X" secondAttribute="bottom" constant="20" id="OAd-pZ-by1"/>
+                <constraint firstItem="IN3-UB-iHX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="lRu-Pi-y0K"/>
+                <constraint firstItem="IN3-UB-iHX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="nMS-9I-1pD"/>
+                <constraint firstItem="64n-xK-2GO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="sRX-vP-nqd"/>
+                <constraint firstItem="IN3-UB-iHX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="z0l-MD-w27"/>
+                <constraint firstItem="KJZ-KX-B1X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="zVP-Op-vny"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="copyright" destination="KJZ-KX-B1X" id="Vud-Wg-poU"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="318.08035714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="LandingBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalendarErrorTableViewCell" rowHeight="729" id="KGk-i7-Jjw" customClass="CalendarErrorTableViewCell" customModule="myUBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="729"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="729"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pze-3o-aYy">
+                        <rect key="frame" x="25" y="25" width="482" height="679"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-wk-fhu" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="141" y="30" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wgs-wk-fhu" secondAttribute="height" multiplier="1:1" id="4lc-Yv-OsC"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="bqo-2j-ae3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Network Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jw-Nh-orr">
+                                <rect key="frame" x="25" y="255" width="432" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="We could not load the latest academic calendar data." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-6u-7P8">
+                                <rect key="frame" x="40" y="294" width="402" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWo-fp-2tm">
+                                <rect key="frame" x="25" y="604" width="432" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.35686274509999999" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Gn-Ft-Fce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Source  " image="arrow.right.square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSource:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQd-r2-st6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This may be caused by a network issue or by changes to the source content published by UBC." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-H3-eI3">
+                                <rect key="frame" x="40" y="372.5" width="402" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khv-9K-xpb">
+                                <rect key="frame" x="40" y="414" width="402" height="47"/>
+                                <string key="text">For the most up-to-date information, please visit the official UBC Academic Calendar by tapping "Source" below.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wJC-H3-eI3" firstAttribute="top" secondItem="PXN-6u-7P8" secondAttribute="bottom" constant="40" id="2xx-WU-XlO"/>
+                            <constraint firstAttribute="trailing" secondItem="PXN-6u-7P8" secondAttribute="trailing" constant="40" id="CLU-KK-cIi"/>
+                            <constraint firstItem="sWo-fp-2tm" firstAttribute="leading" secondItem="pze-3o-aYy" secondAttribute="leading" constant="25" id="Cy3-EP-uiE"/>
+                            <constraint firstItem="khv-9K-xpb" firstAttribute="leading" secondItem="pze-3o-aYy" secondAttribute="leading" constant="40" id="DMX-ig-DqR"/>
+                            <constraint firstItem="wJC-H3-eI3" firstAttribute="leading" secondItem="pze-3o-aYy" secondAttribute="leading" constant="40" id="HsD-4n-NDq"/>
+                            <constraint firstAttribute="trailing" secondItem="sWo-fp-2tm" secondAttribute="trailing" constant="25" id="LKg-D2-e4V"/>
+                            <constraint firstAttribute="trailing" secondItem="wJC-H3-eI3" secondAttribute="trailing" constant="40" id="N4d-rQ-0qu"/>
+                            <constraint firstItem="PXN-6u-7P8" firstAttribute="top" secondItem="5jw-Nh-orr" secondAttribute="bottom" constant="15" id="TWU-Wr-wI7"/>
+                            <constraint firstItem="PXN-6u-7P8" firstAttribute="leading" secondItem="pze-3o-aYy" secondAttribute="leading" constant="40" id="Tkq-XQ-zis"/>
+                            <constraint firstAttribute="bottom" secondItem="sWo-fp-2tm" secondAttribute="bottom" constant="25" id="bxS-wE-dhp"/>
+                            <constraint firstItem="sWo-fp-2tm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="khv-9K-xpb" secondAttribute="bottom" constant="40" id="cO4-OQ-eFB"/>
+                            <constraint firstItem="wgs-wk-fhu" firstAttribute="centerX" secondItem="pze-3o-aYy" secondAttribute="centerX" id="mOC-YK-VFA"/>
+                            <constraint firstItem="wgs-wk-fhu" firstAttribute="top" secondItem="pze-3o-aYy" secondAttribute="top" constant="30" id="raW-Gn-2iX"/>
+                            <constraint firstItem="5jw-Nh-orr" firstAttribute="leading" secondItem="pze-3o-aYy" secondAttribute="leading" constant="25" id="sAC-VH-h8E"/>
+                            <constraint firstItem="5jw-Nh-orr" firstAttribute="top" secondItem="wgs-wk-fhu" secondAttribute="bottom" constant="25" id="sbF-h1-7oG"/>
+                            <constraint firstItem="wgs-wk-fhu" firstAttribute="width" secondItem="pze-3o-aYy" secondAttribute="width" multiplier="0.5" priority="999" id="t3d-x8-TKf"/>
+                            <constraint firstItem="khv-9K-xpb" firstAttribute="top" secondItem="wJC-H3-eI3" secondAttribute="bottom" constant="10" id="vEy-2N-CDN"/>
+                            <constraint firstAttribute="trailing" secondItem="khv-9K-xpb" secondAttribute="trailing" constant="40" id="wT2-qm-Zak"/>
+                            <constraint firstAttribute="trailing" secondItem="5jw-Nh-orr" secondAttribute="trailing" constant="25" id="wxO-PS-YKJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pze-3o-aYy" secondAttribute="trailing" constant="25" id="Khr-vT-p3Z"/>
+                    <constraint firstItem="pze-3o-aYy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Llu-I6-0zE"/>
+                    <constraint firstItem="pze-3o-aYy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="hdD-hp-5j4"/>
+                    <constraint firstAttribute="bottom" secondItem="pze-3o-aYy" secondAttribute="bottom" constant="25" id="wvZ-qu-bad"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="animationView" destination="wgs-wk-fhu" id="1wQ-sa-V9e"/>
+                <outlet property="baseView" destination="pze-3o-aYy" id="4nU-5h-Myn"/>
+                <outlet property="sourceBtn" destination="sWo-fp-2tm" id="C8g-QJ-3o8"/>
+            </connections>
+            <point key="canvasLocation" x="291.304347826087" y="322.43303571428572"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="wgs-wk-fhu"/>
+    </designables>
+    <resources>
+        <image name="arrow.right.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
