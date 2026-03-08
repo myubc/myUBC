@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Resolve packages
+        run: xcodebuild -resolvePackageDependencies -project Sources/myUBC.xcodeproj
+
+      - name: Select simulator
+        id: simulator
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+
+          raw = subprocess.check_output(
+              ["xcrun", "simctl", "list", "devices", "available", "-j"],
+              text=True,
+          )
+          payload = json.loads(raw)
+          candidates = []
+          for runtime, devices in payload.get("devices", {}).items():
+              if "iOS" not in runtime:
+                  continue
+              match = re.search(r"iOS[- ](\d+)(?:[-.](\d+))?", runtime)
+              major = int(match.group(1)) if match else 0
+              minor = int(match.group(2) or 0) if match else 0
+              for device in devices:
+                  if not device.get("isAvailable", True):
+                      continue
+                  name = device.get("name", "")
+                  if "iPhone" not in name:
+                      continue
+                  candidates.append(((major, minor), name, device["udid"]))
+
+          if not candidates:
+              raise SystemExit("No available iOS Simulator iPhone destinations found.")
+
+          candidates.sort(reverse=True)
+          _, name, udid = candidates[0]
+          print(f"Using simulator: {name} ({udid})")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"destination=platform=iOS Simulator,id={udid}\n")
+          PY
+
+      - name: Run tests
+        run: xcodebuild test -project Sources/myUBC.xcodeproj -scheme myUBC -destination '${{ steps.simulator.outputs.destination }}' CODE_SIGNING_ALLOWED=NO

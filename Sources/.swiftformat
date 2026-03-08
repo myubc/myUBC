@@ -1,0 +1,13 @@
+--indent 4
+--linebreaks lf
+--max-width 160
+--wraparguments beforefirst
+--wrapparameters beforefirst
+--wrapcollections before-first
+--wrapconditions before-first
+--wrapreturntype if-multiline
+--stripunusedargs closure-only
+--import-grouping testable-first
+--enable isEmpty
+--disable trailingCommas
+--exclude myUBC/Vendor

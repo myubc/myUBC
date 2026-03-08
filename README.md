@@ -4,6 +4,8 @@
 
 <img width="366" alt="image" src="https://user-images.githubusercontent.com/131136576/236601118-89005270-9801-46ed-a0fd-6edba02406d3.png">
 
+Source code are under `Sources` [folder](./Sources)
+
 
 Get ready for myUBC - the ultimate app for UBC students! 
 
